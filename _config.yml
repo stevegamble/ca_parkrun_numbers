@@ -16,15 +16,15 @@ timezone: America/Toronto
 
 title: NCR Parkruns # the main title
 
-tagline: Onsights into the 6 Ottawa-area parkruns # it will display as the subtitle
+tagline: Insights into the 6 Ottawa-area parkruns # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Olive Gamble is a second year music student at Carleton University specializing in saxophone. Olive is also a maker and fabric artist.
+  Insights into the 6 Ottawa-area parkruns
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: https://www.olivegamble.com
-domain: www.olivegamble.com
+url: https://graphs.stevegamble.com
+domain: graphs.stevegamble.com
 
 #github:
 #  username: github_username # change to your GitHub username
@@ -35,8 +35,8 @@ domain: www.olivegamble.com
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Olive Gamble
-  email: olive@olivegamble.com # change to your email address
+  name: Steve Gamble
+  email: steve@stevegamble.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username # change to your Twitter homepage
@@ -60,7 +60,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-PD8Y558M82
+    id: # todo: add Google Analytics id
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
