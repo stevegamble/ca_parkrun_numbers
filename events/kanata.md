@@ -1,9 +1,7 @@
 ---
-layout: page
-title:  "Kanata"
-date:   2026-11-20 16:00:00 -0500
-categories: [event]
-image:
-  path: /assets/img/kanata.jpg
+layout: event
+title:  Kanata
+slug:   kanata
+first:  2017
+image:  /assets/img/kanata.jpg
 ---
-Gonna put stuff here

@@ -1,9 +1,7 @@
 ---
-layout: page
-title:  "National Capital Region"
-date:   2026-11-20 16:00:00 -0500
-categories: [event]
-image:
-  path: /assets/img/profile.jpg
+layout: event
+title:  National Capital Region
+slug:   ncr
+first:  2017
+image:  /assets/img/profile.jpg
 ---
-Gonna put stuff here for NCR

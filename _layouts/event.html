@@ -1,0 +1,36 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+
+<article class="px-1">
+  <h1 class="dynamic-title">
+    {{ page.title }}
+  </h1>
+  <img src="{{page.image}}" />
+  <div><em>Established {{page.first}}</em></div>
+  <div class="container">
+  	<h2>Summary</h2>
+  	<div class="row">
+		{% include quarterimage.html filename="summary_alltime" %}
+		{% include quarterimage.html filename="summary_2026" %}
+  	</div>
+  	<h2>Attendance - Individual</h2>
+  	<div class="row">
+		{% include quarterimage.html filename="attendance_individual_runs_alltime" %}
+		{% include quarterimage.html filename="attendance_individual_runs_by_year" %}
+		{% include quarterimage.html filename="attendance_individual_volunteers_alltime" %}
+		{% include quarterimage.html filename="attendance_individual_volunteers_by_year" %}
+  	</div>
+  	<h2>Attendance - Cumulative Year-over-Year</h2>
+  	<div class="row">
+		{% include quarterimage.html filename="attendance_yoy" %}
+  	</div>
+  	<h2>Time Distributions</h2>
+  	<div class="row">
+		{% include quarterimage.html filename="time_heatmap" %}
+		{% include quarterimage.html filename="time_mean_median" %}
+  	</div>
+  </div>
+</article>

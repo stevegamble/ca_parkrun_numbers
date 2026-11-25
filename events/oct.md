@@ -1,9 +1,7 @@
 ---
-layout: page
-title:  "Ottawa Carleton Trailway"
-date:   2026-11-20 16:00:00 -0500
-categories: [event]
-image:
-  path: /assets/img/oct.jpg
+layout: event
+title:  Ottawa Carleton Trailway
+slug:   oct
+first:  2024
+image:  /assets/img/oct.jpg
 ---
-Gonna put stuff here

@@ -1,9 +1,7 @@
 ---
-layout: page
-title:  "New York Central Fitness Trail"
-date:   2026-11-20 16:00:00 -0500
-categories: [event]
-image:
-  path: /assets/img/nycft.jpg
+layout: event
+title:  New York Central Fitness Trail
+slug:   nycft
+first:  2021
+image:  /assets/img/nycft.jpg
 ---
-Gonna put stuff here
