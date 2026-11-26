@@ -13,24 +13,51 @@ layout: page
   <div class="container">
   	<h2>Summary</h2>
   	<div class="row">
-		{% include quarterimage.html filename="summary_alltime" %}
-		{% include quarterimage.html filename="summary_2026" %}
+			{% include quarterimage.html filename="summary_alltime" %}
+  		{% for i in (page.first..2026) reversed %}
+  			{% assign filename = 'summary_' | append: i %}
+				{% include quarterimage.html filename=filename %}
+  		{% endfor %}
   	</div>
   	<h2>Attendance - Individual</h2>
   	<div class="row">
-		{% include quarterimage.html filename="attendance_individual_runs_alltime" %}
-		{% include quarterimage.html filename="attendance_individual_runs_by_year" %}
-		{% include quarterimage.html filename="attendance_individual_volunteers_alltime" %}
-		{% include quarterimage.html filename="attendance_individual_volunteers_by_year" %}
+			{% include quarterimage.html filename="attendance_individual_runs_alltime" %}
+			{% include quarterimage.html filename="attendance_individual_runs_by_year" %}
+			{% include quarterimage.html filename="attendance_individual_volunteers_alltime" %}
+			{% include quarterimage.html filename="attendance_individual_volunteers_by_year" %}
   	</div>
   	<h2>Attendance - Cumulative Year-over-Year</h2>
   	<div class="row">
-		{% include quarterimage.html filename="attendance_yoy" %}
+			{% include quarterimage.html filename="attendance_yoy" %}
   	</div>
   	<h2>Time Distributions</h2>
   	<div class="row">
-		{% include quarterimage.html filename="time_heatmap" %}
-		{% include quarterimage.html filename="time_mean_median" %}
+			{% include quarterimage.html filename="time_heatmap" %}
+			{% include quarterimage.html filename="time_mean_median" %}
   	</div>
+
+  	{% if page.slug == 'ncr' %}
+  	<h2>Attendence Cumulative</h2>
+  	<div class="row">
+			{% include quarterimage.html noslug="1" filename="attendance_cumulative_by_date" %}
+			{% include quarterimage.html noslug="1" filename="attendance_cumulative_by_eventnumber" %}
+  	</div>
+  	<h2>Attendence Distribution</h2>
+  	<div class="row">
+			{% include quarterimage.html noslug="1" filename="attendance_distribution" %}
+			{% include quarterimage.html noslug="1" filename="attendance_weekly" %}
+  	</div>
+  	<h2>Attendence Heatmap</h2>
+  	<div class="row">
+			{% include quarterimage.html noslug="1" filename="attendance_heatmap" %}
+			{% include quarterimage.html noslug="1" filename="attendance_heatmap_total" %}
+  	</div>
+  	<h2>Time Distribution</h2>
+  	<div class="row">
+			{% include quarterimage.html noslug="1" filename="time_distribution_minute" %}
+			{% include quarterimage.html noslug="1" filename="time_mean_median" %}
+  	</div>
+  	{% endif %}
+
   </div>
 </article>
